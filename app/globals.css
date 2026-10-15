@@ -128,3 +128,7 @@
     @apply font-sans;
   }
 }
+
+.link {
+  @apply font-sans text-sm lg:text-lg p-4;
+}

@@ -31,7 +31,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           enableSystem
           disableTransitionOnChange
         >
-          <main className="max-w-7xl mx-auto w-full px-4 lg:px-8">
+          <main className="max-w-7xl mx-auto w-full px-4 lg:px-8 border border-white">
             <Navbar />
             {children}
           </main>
