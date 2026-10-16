@@ -18,7 +18,7 @@ export function Navbar() {
             href={"/"}
             className={cn(
               buttonVariants({ variant: "ghost", size: "lg" }),
-              "link underline",
+              "link",
             )}
           >
             Home
@@ -28,7 +28,7 @@ export function Navbar() {
             href={"/blog"}
             className={cn(
               buttonVariants({ variant: "ghost", size: "lg" }),
-              "link underline",
+              "link",
             )}
           >
             Blog
@@ -38,12 +38,14 @@ export function Navbar() {
             href={"/create"}
             className={cn(
               buttonVariants({ variant: "ghost", size: "lg" }),
-              "link underline",
+              "link",
             )}
           >
             Create
           </Link>
         </div>
+
+        <ThemeToggle />
       </div>
 
       <div className="flex items-center gap-2">
@@ -62,8 +64,6 @@ export function Navbar() {
         >
           Login
         </Link>
-
-        <ThemeToggle />
       </div>
     </nav>
   );
